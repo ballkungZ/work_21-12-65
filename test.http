@@ -1,7 +1,5 @@
 GET http://localhost:3000
 ###
-GET http://localhost:3000/api/customer/63b49c27901aba28354b9631
-###
 GET http://localhost:3000/api/customer
 ###
 GET http://localhost:3000/api/customer/63b49c27901aba28354b9631

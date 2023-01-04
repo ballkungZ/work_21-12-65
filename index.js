@@ -16,13 +16,7 @@ app.use(express.urlencoded({
 mongoose.Promise = global.Promise;
 mongoose.connect(dbConfig.url)
     .then(()=>{
-        Customer.deleteMany({},(err)=>{
-    if (err){
-        process.exit();
-            }
-            console.log('Remove Collection of Customer')
-            initCustomer();
-        });
+        console.log("สร้างข้อมูล Customer สำเร็จแล้ว")
     }).catch(err=>{
         console.log('Cannot Connect to MongoDB')
         process.exit();

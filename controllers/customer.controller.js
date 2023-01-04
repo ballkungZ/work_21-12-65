@@ -51,15 +51,15 @@ exports.update = (req, res) =>{
         })
     })
 }
-exports.delete = (req,res) => {
-    customer.findByIdAndUpdate(req.params.customerId)
+exports.delete = (req, res) => {
+    customer.findByIdAndDelete(req.params.customerId)
     .then(data =>{
         if(!data){
             return res.status(404).json({
                 msg: "ไม่พบ Record รหัส :" + req.params.customerId
             })
         }
-        res.json(data)
+        res.json({msg: "ลบข้อมูลเรียบร้อยแล้ว!!!"})
     }).catch(err => {
         return res.status(500).json({
             msg: "เกิดข้อผิดพลาด เนื่องจาก :" + err.message

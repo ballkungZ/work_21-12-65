@@ -16,7 +16,7 @@ app.use(express.urlencoded({
 mongoose.Promise = global.Promise;
 mongoose.connect(dbConfig.url)
     .then(()=>{
-        console.log("สร้างข้อมูล Customer สำเร็จแล้ว")
+        console.log("Connected ^-^")
     }).catch(err=>{
         console.log('Cannot Connect to MongoDB')
         process.exit();

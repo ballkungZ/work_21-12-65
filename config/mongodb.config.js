@@ -1,3 +1,3 @@
 module.exports = {
-    url: 'mongodb://127.0.0.1:27017/customercrud'
+    url: 'mongodb+srv://Sukit:Ballza123z@cluster0.b8hibau.mongodb.net/?retryWrites=true&w=majority'
 }
